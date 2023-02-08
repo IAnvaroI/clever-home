@@ -20,3 +20,7 @@ Route::get('/', function () {
 Route::get('/users', function () {
     return view('users', ['users' => \App\Models\User::all()]);
 })->name('users');
+
+Route::get('/test', function () {
+    return view('test');
+})->name('test');
